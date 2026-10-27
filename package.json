@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "6.3.1",
+    "@supabase/supabase-js": "2.106.2",
+    "@vitejs/plugin-react": "6.0.2",
+    "lucide-react": "1.16.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "vite": "8.0.14"
+  },
+  "devDependencies": {
+    "supabase": "2.102.0"
+  }
+}

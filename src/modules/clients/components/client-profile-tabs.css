@@ -1,0 +1,614 @@
+.client-profile-modal--tabs {
+  width: min(1180px, 100%);
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.client-profile-header--tabs {
+  min-height: 112px;
+}
+
+.client-profile-header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.client-profile-instagram-button {
+  min-height: 42px;
+  border: 1px solid rgba(236, 72, 153, 0.28);
+  border-radius: 15px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f9a8d4;
+  background: rgba(236, 72, 153, 0.10);
+  font-size: 0.82rem;
+  font-weight: 950;
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-profile-instagram-button:hover,
+.client-profile-instagram-button.is-active {
+  border-color: rgba(236, 72, 153, 0.48);
+  color: #ffffff;
+  background: rgba(236, 72, 153, 0.18);
+  transform: translateY(-1px);
+}
+
+.client-profile-content-button {
+  min-height: 42px;
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: 15px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.10);
+  font-size: 0.82rem;
+  font-weight: 950;
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-profile-content-button:hover,
+.client-profile-content-button.is-active {
+  border-color: rgba(37, 99, 235, 0.48);
+  color: #ffffff;
+  background: rgba(37, 99, 235, 0.18);
+  transform: translateY(-1px);
+}
+
+.client-profile-tabs {
+  min-height: 62px;
+  padding: 10px 22px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.client-profile-tabs::-webkit-scrollbar {
+  height: 8px;
+}
+
+.client-profile-tabs::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.38);
+  border-radius: 999px;
+}
+
+.client-profile-tab {
+  flex: 0 0 auto;
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 950;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.client-profile-tab:hover {
+  transform: translateY(-1px);
+  color: var(--text);
+}
+
+.client-profile-tab.is-active {
+  border-color: rgba(37, 99, 235, 0.34);
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--blue);
+}
+
+.client-profile-body--tabs {
+  align-content: start;
+}
+
+.client-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.client-summary-box {
+  min-height: 86px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 15px;
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.client-summary-box span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.client-summary-box strong {
+  min-width: 0;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 950;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-summary-box--green {
+  border-color: rgba(16, 185, 129, 0.24);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.client-summary-box--green strong {
+  color: var(--green);
+}
+
+.client-summary-box--warning {
+  border-color: rgba(245, 158, 11, 0.26);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.client-summary-box--warning strong {
+  color: var(--amber);
+}
+
+.client-summary-box--danger {
+  border-color: rgba(239, 68, 68, 0.24);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.client-summary-box--danger strong {
+  color: var(--danger);
+}
+
+.client-summary-grid--deliveries {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.client-deliveries-section {
+  display: grid;
+  gap: 16px;
+}
+
+.client-deliveries-empty {
+  min-height: 120px;
+  border: 1px dashed var(--line);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(148, 163, 184, 0.06);
+  font-size: 0.84rem;
+  font-weight: 850;
+}
+
+.client-deliveries-list {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.client-delivery-row {
+  min-height: 78px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(260px, 1.35fr) 130px 100px 150px 130px;
+  gap: 12px;
+  align-items: center;
+}
+
+.client-delivery-row:last-child {
+  border-bottom: 0;
+}
+
+.client-delivery-row:hover {
+  background: rgba(37, 99, 235, 0.035);
+}
+
+.client-delivery-row__main {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 11px;
+  align-items: center;
+}
+
+.client-delivery-status {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.client-delivery-status--concluido,
+.client-delivery-status--arquivada {
+  color: var(--green);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.client-delivery-status--enviado_cliente {
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.client-delivery-status--recebido {
+  color: var(--purple);
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.client-delivery-row__main strong,
+.client-delivery-row__meta strong {
+  display: block;
+  min-width: 0;
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 950;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-delivery-row__main span,
+.client-delivery-row__meta span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 850;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-delivery-row__meta.is-money strong {
+  color: var(--green);
+}
+
+.client-profile-modal--tabs .client-documents-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.client-profile-modal--tabs .client-profile-section {
+  min-height: 360px;
+}
+
+.client-edit-field--toggle {
+  align-content: end;
+}
+
+.client-toggle-button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 0 13px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 950;
+  text-align: left;
+}
+
+.client-toggle-button.is-active {
+  border-color: rgba(16, 185, 129, 0.34);
+  color: var(--green);
+  background: rgba(16, 185, 129, 0.10);
+}
+
+.client-instagram-section {
+  display: grid;
+  gap: 16px;
+}
+
+.client-instagram-empty,
+.client-instagram-activation-card,
+.client-instagram-panel {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.client-instagram-empty {
+  min-height: 140px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.client-instagram-activation-card {
+  min-height: 170px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.client-instagram-activation-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: #ec4899;
+  background: rgba(236, 72, 153, 0.12);
+}
+
+.client-instagram-activation-card strong,
+.client-instagram-status strong {
+  display: block;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 950;
+}
+
+.client-instagram-activation-card p {
+  max-width: 620px;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.client-instagram-panel {
+  padding: 18px;
+  display: grid;
+  gap: 18px;
+}
+
+.client-instagram-status {
+  min-height: 76px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  background: var(--surface-soft);
+}
+
+.client-instagram-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #ec4899;
+  background: rgba(236, 72, 153, 0.12);
+}
+
+.client-instagram-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-instagram-status span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.client-instagram-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.client-instagram-feedback {
+  width: fit-content;
+  border: 1px solid rgba(37, 99, 235, 0.20);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.08);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.client-content-section {
+  display: grid;
+  gap: 16px;
+}
+
+.client-content-empty,
+.client-content-activation-card,
+.client-content-panel {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.client-content-empty {
+  min-height: 140px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.client-content-activation-card {
+  min-height: 170px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.client-content-activation-card__icon,
+.client-content-status__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.client-content-activation-card strong,
+.client-content-status strong {
+  display: block;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 950;
+}
+
+.client-content-activation-card p {
+  max-width: 650px;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.client-content-panel {
+  padding: 18px;
+  display: grid;
+  gap: 18px;
+}
+
+.client-content-status {
+  min-height: 76px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  background: var(--surface-soft);
+}
+
+.client-content-status span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.client-content-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.client-content-feedback {
+  width: fit-content;
+  border: 1px solid rgba(37, 99, 235, 0.20);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.08);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+@media (max-width: 980px) {
+  .client-summary-grid,
+  .client-summary-grid--deliveries,
+  .client-profile-modal--tabs .client-documents-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .client-delivery-row {
+    grid-template-columns: minmax(240px, 1fr) repeat(2, 120px);
+  }
+
+  .client-delivery-row__meta:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .client-instagram-activation-card,
+  .client-content-activation-card,
+  .client-content-status,
+  .client-instagram-status {
+    grid-template-columns: 52px minmax(0, 1fr);
+  }
+
+  .client-instagram-activation-card > button,
+  .client-content-activation-card > button,
+  .client-content-status > button,
+  .client-instagram-status > button {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .client-profile-header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .client-profile-instagram-button,
+  .client-profile-content-button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .client-profile-tabs {
+    padding: 10px 16px;
+  }
+
+  .client-profile-tab {
+    min-height: 38px;
+    padding: 0 11px;
+  }
+
+  .client-summary-grid,
+  .client-summary-grid--deliveries,
+  .client-profile-modal--tabs .client-documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-delivery-row {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .client-delivery-row__meta:nth-last-child(-n + 2) {
+    display: grid;
+  }
+}

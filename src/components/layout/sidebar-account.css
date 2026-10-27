@@ -1,0 +1,15 @@
+.clients-dashboard-grid.clients-dashboard-grid--compact {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.clients-side-panel--compact {
+  display: none;
+}
+
+.clients-dashboard-grid--compact .clients-table-card {
+  width: 100%;
+}
+
+.clients-dashboard-grid--compact .clients-search {
+  width: min(360px, 100%);
+}
